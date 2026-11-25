@@ -29,6 +29,16 @@ Requires a GitHub Copilot login in pi (`/login`).
 
 Uses undocumented GitHub endpoints that may change.
 
+## Why this one
+
+Other Pi quota extensions ([pi-copilot-usage](https://www.npmjs.com/package/pi-copilot-usage), [@jack-yang/pi-quota](https://www.npmjs.com/package/@jack-yang/pi-quota), [pi-usage-meters](https://www.npmjs.com/package/pi-usage-meters), [@latentminds/pi-quotas](https://www.npmjs.com/package/@latentminds/pi-quotas)) show only the account balance. This one adds:
+
+- **Credits per prompt and per session.** GitHub's balance updates in delayed batches, so it can't tell you what a single prompt cost.
+- **Exact model prices** from your account, including cache-read/write and long-context pricing.
+- **Pi's share of the month**, separate from VS Code and web usage.
+
+It also shows the account balance, so it covers what they do for Copilot.
+
 ## License
 
 MIT
