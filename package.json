@@ -1,0 +1,52 @@
+{
+  "name": "pi-copilot-credits",
+  "version": "0.1.0",
+  "description": "GitHub Copilot AI-credit tracker for pi: per-prompt credits under each response, session/month/account totals in the footer",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "github-copilot",
+    "copilot",
+    "credits",
+    "usage"
+  ],
+  "license": "MIT",
+  "author": "Yuva Yashvin (https://github.com/levyashvin)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levyashvin/pi-copilot-credits.git"
+  },
+  "homepage": "https://github.com/levyashvin/pi-copilot-credits#readme",
+  "bugs": {
+    "url": "https://github.com/levyashvin/pi-copilot-credits/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "files": [
+    "extensions/copilot-credits.ts",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "pack:check": "npm pack --dry-run"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "1.6.0",
+    "@earendil-works/pi-coding-agent": "1.6.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
