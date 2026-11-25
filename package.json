@@ -1,7 +1,7 @@
 {
   "name": "pi-copilot-credits",
   "version": "0.1.0",
-  "description": "GitHub Copilot AI-credit tracker for pi: per-prompt credits under each response, session/month/account totals in the footer",
+  "description": "GitHub Copilot Business/Enterprise AI-credit tracker for pi: per-prompt credits under each response, totals in the footer",
   "keywords": [
     "pi-package",
     "pi-extension",
